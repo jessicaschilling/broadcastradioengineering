@@ -1,0 +1,158 @@
+$color-background-primary: #3aafa9;
+$color-background-secondary: #2b7a7b;
+$color-accent-primary: #def2f1;
+$color-background-tertiary: $color-accent-primary;
+$color-accent-secondary: $color-background-secondary;
+$color-text-primary: #17252a;
+$color-text-secondary: #feffff;
+$color-text-tertiary: $color-background-secondary;
+
+body {
+  background-color: $color-background-tertiary;
+  color: $color-text-primary;
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  align-items: center;
+  background-color: $color-background-primary;
+  background-image: url("./splash.svg");
+  background-size: contain;
+  display: flex;
+  height: calc(100vh - 3em);
+  text-align: center;
+}
+
+main {
+  font-size: 1.2em;
+}
+
+footer {
+  color: $color-text-tertiary;
+  font-size: 0.9em;
+  margin-top: 3.5em;
+  padding: 0.5em 2em 1em 1em;
+  text-align: center;
+}
+
+a {
+  color: $color-background-secondary;
+  font-weight: 700;
+  text-decoration: none;
+
+  /* HOVER OFF */
+  -webkit-transition: color 0.3s;
+}
+
+a:hover {
+  color: $color-background-primary;
+
+  /* HOVER OFF */
+  -webkit-transition: color 0.3s;
+}
+
+h1 {
+  color: $color-text-secondary;
+  font-size: 5em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-top: 0;
+  text-align: center;
+}
+
+p, li {
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.button {
+  background-color: $color-text-primary;
+  border-radius: 9999px;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.25);
+  color: $color-text-secondary;
+  font-size: 1.2em;
+  padding: 1em 2.5em;
+  text-decoration: none;
+
+  /* HOVER OFF */
+  -webkit-transition: background-color 0.3s;
+}
+
+.button:hover {
+  animation: pulse 5s;
+  background-color: $color-background-primary;
+  color: $color-text-secondary;
+
+  /* HOVER ON */
+  -webkit-transition: background-color 0.3s;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+.button-nudge {
+  bottom: 2em;
+  margin: 1em 0;
+  position: relative;
+  text-align: center;
+}
+
+.content-container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.dot-nudge {
+  margin-left: -0.29em;
+}
+
+.font-light {
+  font-weight: 200;
+}
+
+.section-about {
+  background-color: $color-accent-secondary;
+  color: $color-text-secondary;
+  padding: 4em 2em 5em 2em;
+}
+
+.section-contact {
+  color: $color-text-primary;
+  padding: 0.5em 2em;
+}
+
+.section-logotype {
+  background-color: $color-background-primary;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 2px;
+
+  h1 {
+    font-size: calc(min(max(16px, 10.5vw), 100px));
+    line-height: 0.9;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+}
