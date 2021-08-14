@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import splash from './splash.svg';
 
 class App extends Component {
   getYear() {
