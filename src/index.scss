@@ -24,14 +24,16 @@ header {
   display: flex;
   height: calc(100vh - 4.5em);
   text-align: center;
-}
 
-@media only screen 
+  @media only screen 
   and (max-width: 1200px) {
-    header {
       background-size: cover;
-    }
+  }
 
+  @media only screen 
+  and (orientation: landscape) {
+    height: calc(100vh - 2em);
+  }
 }
 
 main {
@@ -72,6 +74,11 @@ h2 {
   font-size: 1.6em;
   margin-top: 0;
   text-align: center;
+
+  @media only screen 
+  and (max-width: 550px) {
+    font-size: 1.4em;
+  }
 }
 
 p, li {
@@ -94,6 +101,11 @@ strong {
   top: 1em;
   right: 0.8em;
 
+  @media only screen 
+  and (orientation: landscape) {
+    font-size: 1em;
+  }
+
   /* HOVER OFF */
   -webkit-transition: background-color 0.3s;
 }
@@ -111,8 +123,19 @@ strong {
   margin-bottom: -2.75em;
   text-align: center;
 
+  @media only screen 
+  and (orientation: landscape) {
+    margin-top: -2em;
+    margin-bottom: -2em;
+  }
+
   img {
     width: 5em;
+
+    @media only screen 
+    and (orientation: landscape) {
+      width: 3.5em;
+    }
 
     /* HOVER OFF */
     -webkit-transition: transform 0.3s;
@@ -187,25 +210,45 @@ strong {
   background-color: $color-accent-secondary;
   color: $color-text-secondary;
   padding: 4em 2em 5em 2em;
+
+  @media only screen 
+  and (max-width: 550px) {
+    padding: 4em 1em 4em 1em;
+  }
 }
 
 .section-contact {
   color: $color-text-primary;
   padding: 0.5em 2em;
+
+  @media only screen 
+  and (max-width: 550px) {
+    padding: 0.5em 1em;
+  }
 }
 
 .section-logotype {
   text-align: left;
   margin: 0 auto;
   max-width: 960px;
-  padding: 0px 2px;
+  padding: 0 2em;
+
+  @media only screen 
+  and (max-width: 550px) {
+    padding: 0 0 0 0;
+  }
 
   h1 {
     background-color: $color-background-primary;
-    font-size: calc(min(max(16px, 10.5vw), 100px));
+    font-size: calc(min(max(16px, 12vw), 100px));
     line-height: 0.9;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+
+    @media only screen 
+    and (orientation: landscape) {
+      font-size: calc(min(max(16px, 10vw), 90px));
+    }
   }
 }
