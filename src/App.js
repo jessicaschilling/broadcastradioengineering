@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import {Link} from 'react-scroll';
 
 class App extends Component {
   getYear() {
@@ -8,6 +9,11 @@ class App extends Component {
   render() {
   return (
     <div className="App">
+        <div className="">
+          <a className="button-nav" href="mailto:eric@broadcastradio.engineering?subject=Email%20enquiry%20from%20BroadcastRadio.Engineering">
+            Contact
+          </a>
+        </div>
         <header>
           <div className="section-logotype">
             <h1>
@@ -23,10 +29,15 @@ class App extends Component {
             </h1>
           </div>
         </header>
+        <div className="button-play">
+          <Link to="about" spy={true} smooth={true}>
+            <img src="play.svg" alt="Scroll down" />
+          </Link>
+        </div>
         <main>
           <section className="section-about">
             <div className="content-container">
-              <h2>
+              <h2 id="about">
                 Radio engineering services based in Boulder, Colorado USA.
               </h2>
               <p>
@@ -41,7 +52,7 @@ class App extends Component {
             </div>
           </section>
           <div className="button-nudge">
-            <a className="button" href="mailto:eric@broadcastradio.engineering?subject=Email%20enquiry%20from%20BroadcastRadio.Engineering">
+            <a className="button-main" href="mailto:eric@broadcastradio.engineering?subject=Email%20enquiry%20from%20BroadcastRadio.Engineering">
               Contact Us
             </a>
           </div>
