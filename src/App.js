@@ -41,13 +41,17 @@ class App extends Component {
                 Radio engineering services based in Boulder, Colorado USA.
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                More than 50 years of contract and consulting engineering services for stations in the <strong>AM, FM, and shortwave broadcast services</strong>, as well as <strong>maritime and point-to-point services</strong>.
+              </p>
+              <p>
+                Recent projects include the successful <strong>design, evaluation, installation, test</strong>, and <strong>maintenance</strong> of:
               </p>
               <ul>
-                <li><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Ut accumsan interdum tellus</li>
-                <li><strong>Donec efficitur dui</strong> vel hendrerit mollis. Ut vel tincidunt justo, consectetur semper justo</li>
-                <li><strong>Sed fringilla odio consectetur</strong>, tincidunt nisl vel, lacinia odio. Integer ut efficitur erat, ut semper ante. </li>
-                <li><strong>Duis venenatis libero</strong> leo, at vulputate arcu aliquam vitae.</li>
+                <li>Transmitting and receiving sites</li>
+                <li>Studios, operator positions, and technical operations centers</li>
+                <li>Supporting IT network infrastructure</li>
+                <li>Antenna and coverage modeling, including NEC4</li>
+                <li>Broadcast frequency studies</li>
               </ul>
             </div>
           </section>
