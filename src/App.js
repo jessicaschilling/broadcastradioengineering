@@ -67,7 +67,7 @@ class App extends Component {
           </section>
         </main>
         <footer>
-          &copy; {this.getYear()} Broadcast Radio Engineering. All rights reserved.
+          &copy; {this.getYear()} <a href="https://www.youtube.com/watch?v=SMbTXm03yuQ" target="_blank" rel="noreferrer noopener">Broadcast Radio Engineering</a>. All rights reserved.
         </footer>
     </div>
   );
